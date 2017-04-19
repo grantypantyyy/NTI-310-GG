@@ -94,7 +94,7 @@ sudo systemctl restart httpd
 echo "Django is now accessible from the web at [server IP] and admin site and [server IP]/admin"
 
 #configure django database settings
-ip1=$(gcloud compute instances list | grep postgres-c-production | awk '{print $4}')
+ip1=$(gcloud compute instances list | grep postgres-b-staging | awk '{print $4}')
 
 sed -i "s/        'ENGINE': 'django.db.backends.sqlite3',/        'ENGINE': 'django.db.backends.postgresql_psycopg2',/g" /opt/django/project1/project1/settings.py
 sed -i "s/        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),/        'NAME': 'project1',/g" /opt/django/project1/project1/settings.py
