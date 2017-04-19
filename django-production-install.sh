@@ -1,4 +1,4 @@
-#!/bin/bash
+-!/bin/bash
 
 #django/apache production install script
 
@@ -13,7 +13,7 @@ sudo systemctl start httpd.service
 
 echo "Cloning jwade005's github..."
 sudo yum -y install git
-git clone https://github.com/grantypantyyy/NTI-310_GG.git
+git clone https://github.com/grantypantyyy/NTI-310-GG.git
 
 #isntall current epel release
 sudo yum -y install epel-release
