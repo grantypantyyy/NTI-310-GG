@@ -1,0 +1,17 @@
+dn: dc=grant,dc=local
+dc: grant
+objectClass: top
+objectClass: domain
+
+dn: cn=ldapadm,dc=grant,dc=local
+objectClass: organizationalRole
+cn: ldapadm
+description: LDAP Manager
+
+dn: ou=People,dc=grant,dc=local
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Group,dc=grant,dc=local
+objectClass: organizationalUnit
+ou: Group
