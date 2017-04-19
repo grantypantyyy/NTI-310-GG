@@ -124,7 +124,7 @@ python manage.py migrate
 cd /opt/django/project1
 #/opt/django/django-env/bin/python manage.py createsuperuser
 #manage.py docs for automataing
-echo "from django.contrib.auth.models import User; User.objects.create_superuser('jonathan', 'jwade005@seattlecentral.edu', 'P@ssw0rd1')" | python manage.py shell
+echo "from django.contrib.auth.models import User; User.objects.create_superuser('grant', 'ggrism01@seattlecentral.edu', 'P@ssw0rd1')" | python manage.py shell
 
 #/opt/django/django-env/bin/python manage.py createsuperuser   --username jwade --email jwade005@seattlecentral.edu --password P@ssw0rd1 --noinput
 
