@@ -11,7 +11,7 @@ sudo systemctl enable httpd.service
 echo "Starting Apache Server..."
 sudo systemctl start httpd.service
 
-echo "Cloning jwade005's github..."
+echo "Cloning grant's github..."
 sudo yum -y install git
 git clone https://github.com/grantypantyyy/NTI-310-GG.git
 
