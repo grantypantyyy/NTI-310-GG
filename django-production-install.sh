@@ -126,8 +126,6 @@ cd /opt/django/project1
 #manage.py docs for automataing
 echo "from django.contrib.auth.models import User; User.objects.create_superuser('grant', 'ggrism01@seattlecentral.edu', 'P@ssw0rd1')" | python manage.py shell
 
-#/opt/django/django-env/bin/python manage.py createsuperuser   --username jwade --email jwade005@seattlecentral.edu --password P@ssw0rd1 --noinput
-
 deactivate
 
 #allow django to connect to the db on httpd <--- solves issue with django being able to reconnect to the db
