@@ -105,6 +105,7 @@ gcloud compute instances create postgres-b-staging \
     --image-family centos-7 \
     --image-project centos-cloud \
     --machine-type f1-micro \
+    --zone us-west1-c \
     --scopes cloud-platform \
     --metadata-from-file startup-script=/tmp/NTI-310/postgres-install.sh \
 
@@ -113,6 +114,7 @@ gcloud compute instances create postgres-c-production \
     --image-family centos-7 \
     --image-project centos-cloud \
     --machine-type f1-micro \
+    --zone us-west1-c \
     --scopes cloud-platform \
     --metadata-from-file startup-script=/tmp/NTI-310/postgres-install.sh \
 
@@ -121,6 +123,7 @@ gcloud compute instances create django-a-test \
     --image-family centos-7 \
     --image-project centos-cloud \
     --machine-type f1-micro \
+    --zone us-west1-c \
     --scopes cloud-platform \
     --metadata-from-file startup-script=/tmp/NTI-310/django-test-install.sh \
 
@@ -129,6 +132,7 @@ gcloud compute instances create django-b-staging \
     --image-family centos-7 \
     --image-project centos-cloud \
     --machine-type f1-micro \
+    --zone us-west1-c \
     --scopes cloud-platform \
     --metadata-from-file startup-script=/tmp/NTI-310/django-staging-install.sh \
 
@@ -137,6 +141,7 @@ gcloud compute instances create django-c-production \
     --image-family centos-7 \
     --image-project centos-cloud \
     --machine-type f1-micro \
+    --zone us-west1-c \
     --scopes cloud-platform \
     --metadata-from-file startup-script=/tmp/NTI-310/django-production-install.sh \
 
