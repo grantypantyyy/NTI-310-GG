@@ -12,18 +12,18 @@ echo "Authorizing grant for this project..."
 gcloud auth login ggrism01@seattlecentral.edu --no-launch-browser
 
 echo "Enabling billing..."
-gcloud alpha billing accounts projects link nti310-auto4 --account-id=00AE2F-5A6B59-D9E2CE
+gcloud alpha billing accounts projects link nti-310-auto-5 --account-id=00AE2F-5A6B59-D9E2CE
 
 echo "Setting admin account-id..."
 gcloud config set account ggrism01@seattlecentral.edu
 
 echo "Setting the project for Configuration..."
-gcloud config set project nti310-auto4
+gcloud config set project nti-310-auto-5
 
 echo "Setting zone/region for Configuration..."
-gcloud config set compute/zone us-west1-b
+gcloud config set compute/zone us-east1-a
 
-gcloud config set compute/region us-west1
+gcloud config set compute/region us-east1
 
 echo "Creating firewall-rules..."
 gcloud compute firewall-rules create allow-http --description "Incoming http allowed." \
